@@ -1,4 +1,4 @@
-package tech.java;
+package tech.java._02_Combination;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

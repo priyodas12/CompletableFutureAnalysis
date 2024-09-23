@@ -1,4 +1,4 @@
-package tech.java;
+package tech.java._03_Exceptions;
 
 import java.util.concurrent.CompletableFuture;
 

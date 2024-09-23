@@ -1,9 +1,10 @@
-package tech.java._01_creation;
+package tech.java._01_Creation;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.function.Supplier;
 
 import lombok.extern.slf4j.Slf4j;
@@ -11,8 +12,15 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class CompletableFutureCreation {
 
-  public static void main (String[] args) {
+  public static void main (String[] args) throws ExecutionException, InterruptedException {
 
+    CompletableFuture<String> stringCompletableFutureBasic = new CompletableFuture<> ();
+
+    stringCompletableFutureBasic.complete ("Hello");
+
+    log.info ("stringCompletableFutureBasic:: {}", stringCompletableFutureBasic.get ());
+
+    //with static methods
     //**********************************************************************************
 
     //with Supplier;

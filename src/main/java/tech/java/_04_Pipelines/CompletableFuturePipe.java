@@ -1,4 +1,4 @@
-package tech.java;
+package tech.java._04_Pipelines;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
